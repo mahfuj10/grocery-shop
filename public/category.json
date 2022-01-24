@@ -1,0 +1,74 @@
+[
+    {
+        "image": "https://i.postimg.cc/P51vttKG/apple.png",
+        "name": "Organic Food"
+    },
+    {
+        "image": "https://i.postimg.cc/mrGMMch2/baby.png",
+        "name": "Baby Care"
+    },
+    {
+        "image": "https://i.postimg.cc/WzDtxjtH/bagel.png",
+        "name": "Breakfast"
+    },
+    {
+        "image": "https://i.postimg.cc/3JsD5yXC/beauty.png",
+        "name": "Beauty & Health"
+    },
+    {
+        "image": "https://i.postimg.cc/tTvYr7R6/cabbage.png",
+        "name": "Fruits & Vegetable"
+    },
+    {
+        "image": "https://i.postimg.cc/HWKrXJhD/carp-fish.png",
+        "name": "Fish & Meat"
+    },
+    {
+        "image": "https://i.postimg.cc/XNDCL1XP/cat.png",
+        "name": "Pet Care"
+    },
+    {
+        "image": "https://i.postimg.cc/PJN8hYVK/chili-sauce.png",
+        "name": "Sauces & Pickles"
+    },
+    {
+        "image": "https://i.postimg.cc/VLrbV9Ck/chips.png",
+        "name": "Snacks & Instant"
+    },
+    {
+        "image": "https://i.postimg.cc/DZvXjtq9/cleaner.png",
+        "name": "Household Tools"
+    },
+    {
+        "image": "https://i.postimg.cc/vB06p3hc/cookie.png",
+        "name": "Biscuits & Cakes"
+    },
+    {
+        "image": "https://i.postimg.cc/g0qhKY6y/dumbbell.png",
+        "name": "Sports & Fitness"
+    },
+    {
+        "image": "https://i.postimg.cc/Y9CvfQ7k/frying-pan.png",
+        "name": "Cooking Essentials"
+    },
+    {
+        "image": "https://i.postimg.cc/xdRkztWt/milk.png",
+        "name": "Milk & Dairy"
+    },
+    {
+        "image": "https://i.postimg.cc/PJBNjcwr/shrimp.png",
+        "name": "Fresh Seafood"
+    },
+    {
+        "image": "https://i.postimg.cc/FKmdz2nY/soft-drink.png",
+        "name": "Drinks"
+    },
+    {
+        "image": "https://i.postimg.cc/T1S5P1Zx/strawberry-jam-1.png",
+        "name": "Jam & Jelly"
+    },
+    {
+        "image": "https://i.postimg.cc/J0yQrGp3/honey-1.png",
+        "name": "Honey"
+    }
+]

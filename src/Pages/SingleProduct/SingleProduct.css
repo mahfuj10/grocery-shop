@@ -1,0 +1,72 @@
+/*-------------------
+ single details page 
+ ----------------*/
+
+.delivery-details{
+    padding: 30px;
+    background-color: #F9FAFB;
+    border-radius: 15px;
+}
+
+.delivery-details p{
+    font-size: 14px;
+    margin-top: 6px;
+}
+
+.delivery-details article {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    color: #6B7280;
+}
+/* social media button */
+.social-button button{
+    height: 30px;
+    width: 30px;
+    border: 1px solid #10B981;
+    border-radius: 50%;
+    color: #10B981;
+    margin-right: 10px;
+    background: #fff;
+    margin-bottom: 40px
+};
+/* cart button */
+.cart-button{
+    padding: 3px 20px;
+    border: 1px solid #10B981;
+    color: #fff;
+    background: #10B981;
+    font-weight: 500;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* single detilas of product */
+/*-----------------------
+   review form
+------------------ */
+.review-form {
+    background-color: #EEF2FF;
+    padding: 50px;
+    border-radius: 10px;
+    }
+    .review-form input,select,textarea{
+        margin-bottom: 20px;
+        width: 100% !important;
+        padding: 8px;
+    }
+    .review-form label{
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+    .review-form::placeholder{
+        font-weight: 500;
+    }
+    .slick-next,.slick-prev{
+        background-color: #232F3E !important;
+    height: 40px !important;
+    width: 40px !important;
+    padding: 5px !important;
+    border-radius: 50% !important;
+    }

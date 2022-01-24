@@ -1,4 +1,21 @@
+/* change copy color */
+::-moz-selection { /* Code for Firefox */
+	background: #b4c9dd;
+	color: black;
+  }::selection {
+	background: #b4c9dd;
+	color: black;
+  }
+  ::-webkit-scrollbar {
+	width: 2px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+	background: #b4c9dd; 
+	border-radius: 10px;
+  }
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

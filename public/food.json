@@ -1,0 +1,272 @@
+[
+    {
+        "name": "Ahold Acorn Squash",
+        "image": "https://i.postimg.cc/bN3s6jkx/Ahold-Acorn-Squash-1ct.jpg",
+        "category": "Vegetable",
+        "price": "14",
+        "rating": "4.5"
+    },
+    {
+        "name": "Aloe Vera Leaf",
+        "image": "https://i.postimg.cc/dQR7yC0S/Aloe-Vera-Leaf-each.jpg",
+        "category": "Vegetable",
+        "price": "15",
+        "rating": "5"
+    },
+    {
+        "name": "Blueberry",
+        "image": "https://i.postimg.cc/kg2XfRnC/Blackberries-1-25-qt.jpg",
+        "category": "Fruits",
+        "price": "12",
+        "rating": "4"
+    },
+    {
+        "name": "Bok Choy Cabbage",
+        "image": "https://i.postimg.cc/9Q0zKNYv/Bok-Choy-Cabbage-per-lb.jpg",
+        "category": "Vegetable",
+        "price": "16",
+        "rating": "5"
+    },
+    {
+        "name": "Calabaza Squash",
+        "image": "https://i.postimg.cc/xTTdNFhc/Calabaza-Squash-Package-each.jpg",
+        "category": "Vegetable",
+        "price": "11",
+        "rating": "3"
+    },
+    {
+        "name": "Cauliflower",
+        "image": "https://i.postimg.cc/0QRQ651s/Cauliflower-1-35lb.jpg",
+        "category": "Vegetable",
+        "price": "15",
+        "rating": "3.9"
+    },
+    {
+        "name": "Clementine",
+        "image": "https://i.postimg.cc/pd8VtNh1/Clementine-5ct.jpg",
+        "category": "Fruits",
+        "price": "13",
+        "rating": "5"
+    },
+    {
+        "name": "Green Leaf Lettuce",
+        "image": "https://i.postimg.cc/2yjCvVHP/Green-Leaf-Lettuce-each.jpg",
+        "category": "Vegetable",
+        "price": "17",
+        "rating": "4.9"
+    },
+    {
+        "name": "Kale Sprouts",
+        "image": "https://i.postimg.cc/9QsXSXM7/Kale-Sprouts-3oz.jpg",
+        "category": "Vegetable",
+        "price": "15",
+        "rating": "5"
+    },
+    {
+        "name": "Lettuce",
+        "image": "https://i.postimg.cc/XqnY82v1/Lettuce-1lb.jpg",
+        "category": "Vegetable",
+        "price": "11",
+        "rating": "3.9"
+    },
+    {
+        "name": "Organic Purple Cauliflower",
+        "image": "https://i.postimg.cc/mgnhsNdh/Organic-Purple-Cauliflower-1lb.jpg",
+        "category": "Vegetable",
+        "price": "13",
+        "rating": "4.7"
+    },
+    {
+        "name": "Parsley",
+        "image": "https://i.postimg.cc/4ywNFz7f/Parsley-each.jpg",
+        "category": "Vegetable",
+        "price": "12",
+        "rating": "5"
+    },
+    {
+        "name": "Pineapple Imported",
+        "image": "https://i.postimg.cc/6qKyPWM0/Pineapple-1-5lb.jpg",
+        "category": "Fruits",
+        "price": "10",
+        "rating": "5"
+    },
+    {
+        "name": "Radicchio",
+        "image": "https://i.postimg.cc/MZYTT8sC/Radicchio-12ct.jpg",
+        "category": "Vegetable",
+        "price": "18",
+        "rating": "4.5"
+    },
+    {
+        "name": "Rainbow Chard",
+        "image": "https://i.postimg.cc/hj1Sf90L/Rainbow-Chard-Package-per-lb.jpg",
+        "category": "Vegetable",
+        "price": "17",
+        "rating": "5"
+    },
+    {
+        "name": "Rainbow Peppers",
+        "image": "https://i.postimg.cc/tCS43NGD/Rainbow-Peppers-4ct.jpg",
+        "category": "Vegetable",
+        "price": "16",
+        "rating": "5"
+    },
+    {
+        "name": "Strawberrie",
+        "image": "https://i.postimg.cc/MGjHKM45/Strawberries-9-25oz.jpg",
+        "category": "Fruits",
+        "price": "18",
+        "rating": "4.9"
+    },
+    {
+        "name": "Strawberries Package",
+        "image": "https://i.postimg.cc/Hspr4LcW/Strawberries-Package-2-25-oz.jpg",
+        "category": "Fruits",
+        "price": "10",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/nLRx6S5j/Akane-Apple-2lb.jpg",
+        "name": "Akane Apple",
+        "price": "12",
+        "oldPrice": "13",
+        "discount": "5",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/GphrgnMn/anaros-pineapple-1-pcs.jpg",
+        "name": "Pineapple",
+        "price": "10",
+        "oldPrice": "11",
+        "discount": "9",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/QdqhqdJq/Blackberries-8oz.jpg",
+        "name": "Blueberries",
+        "price": "14",
+        "oldPrice": "15",
+        "discount": "7",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/wTL67VtZ/Cranberries-Package-9-5-oz.jpg",
+        "name": "Cranberries",
+        "price": "13",
+        "oldPrice": "15",
+        "discount": "13",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/y8K79Zcd/daab-green-coconut-1-pcs.jpg",
+        "name": "Green Coconut",
+        "price": "6",
+        "oldPrice": "7",
+        "discount": "14",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/L4r997sj/Escarole-1ct.jpg",
+        "name": "Escarole",
+        "price": "13",
+        "oldPrice": "14",
+        "discount": "7",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/0565qx98/Haitian-Mango-8ct.jpg",
+        "name": "Haitian Mangoe",
+        "price": "8",
+        "oldPrice": "10",
+        "discount": "20",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/6q4mbMJX/Iglotex-Cauliflower-Florets.jpg",
+        "name": "Iglotex Cauliflower",
+        "price": "14",
+        "oldPrice": "15",
+        "discount": "7",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/gr9BC3m6/komola-orange-imported-50-gm-1-kg.jpg",
+        "name": "Orange Imported",
+        "price": "9",
+        "oldPrice": "10",
+        "discount": "10",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/3w9VkyCP/Mandarin-Clementine-22lb.jpg",
+        "name": "Mandarin Clementine",
+        "price": "11",
+        "oldPrice": "12",
+        "discount": "8",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/pdP3VQ8f/Muscat-Grapes-Bag-per-lb.jpg",
+        "name": "Muscat Grapes",
+        "price": "12",
+        "oldPrice": "13",
+        "discount": "8",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/Y9sPxJPR/Orange-Bell-Pepper-22ct.jpg",
+        "name": "Organic Bell Pepper",
+        "price": "10",
+        "oldPrice": "12",
+        "discount": "17",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/JzV9vCzd/Organic-Banana-each.jpg",
+        "name": "Organic Banana",
+        "price": "12",
+        "oldPrice": "13",
+        "discount": "8",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/DZZDL2xm/Organic-Blueberries-12ct.jpg",
+        "name": "Organic Blueberries",
+        "price": "15",
+        "oldPrice": "16",
+        "discount": "6",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/rw1vLZdy/Organic-Pomegranate-each.jpg",
+        "name": "Organic Pomegranate",
+        "price": "10",
+        "oldPrice": "11",
+        "discount": "9",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/zDMmwgZN/Pomegranate.jpg",
+        "name": "Pomegranate",
+        "price": "9",
+        "oldPrice": "10",
+        "discount": "9",
+        "rating": "4"
+    },
+    {
+        "image": "https://i.postimg.cc/Pr8gS5Tw/Skylar-Rae-Cherries-16lb.jpg",
+        "name": "Skylar Rae Cherries",
+        "price": "13",
+        "oldPrice": "14",
+        "discount": "7",
+        "rating": "5"
+    },
+    {
+        "image": "https://i.postimg.cc/mkK0T0Nk/Strawberries-Package-3pt.jpg",
+        "name": "Strawberries",
+        "price": "13",
+        "oldPrice": "15",
+        "discount": "13",
+        "rating": "5"
+    }
+]

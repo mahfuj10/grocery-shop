@@ -1,0 +1,30 @@
+[
+    {
+        "image": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F23kQcB9%2Fins3.jpg&w=128&q=75",
+        "name": "Breakfast Gift Voucher",
+        "discount": "5",
+        "code": "BREAKFAST124",
+        "shopPice": "50"
+    },
+    {
+        "image": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FwBBYm7j%2Fins4.jpg&w=128&q=75",
+        "name": "Dinner Gift Voucher",
+        "discount": "10",
+        "code": "DINNER2022",
+        "shopPice": "150"
+    },
+    {
+        "image": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2F4thS4Z1%2Fins2.jpg&w=128&q=75",
+        "name": "Winter Gift Voucher",
+        "discount": "13",
+        "code": "WINTER2022",
+        "shopPice": "175"
+    },
+    {
+        "image": "https://kachabazar-store.vercel.app/_next/image?url=https%3A%2F%2Fi.ibb.co%2FPDLPDHc%2Fins1.jpg&w=128&q=75",
+        "name": "Food Bank",
+        "discount": "20",
+        "code": "FOODBANK22",
+        "shopPice": "250"
+    }
+]

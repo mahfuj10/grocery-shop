@@ -17,10 +17,12 @@ const Header = () => {
 
     return (
 
-        <Container>
+        <Container className='mt-5'>
             <Row>
                 <Col md={12} lg={6}>
-                    <img style={{ width: "100%", height: "357px", borderRadius: 10 }} src={image1} alt="image1" />
+
+                    <article style={{ backgroundImage: `url(${image1})`, height: '357px', backgroundSize: 'cover', borderRadius: 10 }}></article>
+
                 </Col>
                 <Col lg={6}>
                     <Row>
