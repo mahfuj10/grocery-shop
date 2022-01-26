@@ -1,4 +1,5 @@
 import React from 'react';
+import Login from '../../Login/Login/Login';
 import Category from '../Category/Category';
 import DiscountProducts from '../DiscountProducts/DiscountProducts/DiscountProducts';
 import Header from '../Header/Header/Header';
@@ -19,6 +20,7 @@ const Home = () => {
             <DiscountProducts />
             {/* <Footer /> */}
             <BotttomNav />
+            {/* <Login /> */}
         </>
     );
 };

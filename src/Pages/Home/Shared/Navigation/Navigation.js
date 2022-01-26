@@ -68,6 +68,7 @@ const Navigation = () => {
                     <a href="#news">Category</a>
                     <a href="#contact">About Us</a>
                     <a href="#contact">Contact Us</a>
+                    <Link to="/login">Login</Link>
                     <Link to="/offer">Offers</Link>
                 </div>
             </div>

@@ -15,7 +15,7 @@ const ProductReview = ({ id, name }) => {
 
     return (
         <>
-            <Container className='mb-5 pb-5'>
+            <Container className='mb-0 pb-4'>
 
                 <h5 className='mb-5'>Ratings & Reviews of {name}</h5>
 
@@ -24,7 +24,7 @@ const ProductReview = ({ id, name }) => {
                         {
                             reviews.map(review => <Review
                                 review={review}
-                                key={review?.image}
+                                key={review?._id}
                             />)
                         }
                     </Col>

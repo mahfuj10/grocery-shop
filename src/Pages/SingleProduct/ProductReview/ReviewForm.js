@@ -1,5 +1,6 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
+import useFirebase from '../../Login/Hooks/useFirebase';
 import '../SingleProduct.css';
 
 const ReviewForm = ({ id }) => {
@@ -10,13 +11,13 @@ const ReviewForm = ({ id }) => {
     const month = String(today.getMonth() + 1).padStart(2, '0');
     const presentDate = today.getFullYear();
     today = day + '/' + month + '/' + presentDate;
-    // const { user } = UseAuth();
+    const { user } = useFirebase();
 
     const onSubmit = data => {
 
         data.foodId = id;
         data.date = today;
-        data.image = 'http://localhost:3000/static/media/banner-2.086af3dffe88606d5bf4.jpg'
+        data.image = user?.photoURL
 
         fetch('https://secret-island-26493.herokuapp.com/review', {
             method: "POST",
@@ -41,12 +42,12 @@ const ReviewForm = ({ id }) => {
             <form className="pt-5" onSubmit={handleSubmit(onSubmit)}>
 
                 <label>Your Name</label> <br />
-                <input required {...register("name")} /> <br />
+                <input placeholder={user?.displayName} required {...register("name")} /> <br />
                 {/* <label>Your Email</label> <br />
                 <input {...register("email")} /> <br /> */}
                 <label>Rating</label> <br />
-                <select required  {...register("rating")}>
-                    <option >Choose rating</option>
+                <select   {...register("rating")}>
+                    <option required>Choose rating</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

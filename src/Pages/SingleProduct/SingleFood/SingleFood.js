@@ -12,6 +12,7 @@ import { useParams } from 'react-router-dom';
 import DeliveryDetails from '../DeliveryDetails/DeliveryDetails';
 import '../SingleProduct.css';
 import ProductReview from '../ProductReview/ProductReview';
+import RelatedProducts from '../RelatedProducts/RelatedProducts';
 
 const SingleFood = () => {
 
@@ -43,12 +44,14 @@ const SingleFood = () => {
 
 
     return (
-        <>
-            <Container style={{ marginTop: 50, marginBottom: 60 }}>
+
+        <section style={{ backgroundColor: "#F9FAFB" }}>
+
+            <Container style={{ paddingTop: 50, marginBottom: 60 }}>
 
                 <h6 style={{ fontSize: 14, marginBottom: 50 }}>Home <FaGreaterThan /> Food Details <FaGreaterThan /> {food?.name} </h6>
 
-                <Row className='shadow align-items-center rounded-3 food-details'>
+                <Row className='shadow align-items-center rounded-3 food-details ' style={{ backgroundColor: "#FFFFFF" }}>
 
                     <Col xs={12} lg={4}>
 
@@ -106,9 +109,12 @@ const SingleFood = () => {
             </Container>
 
             {/* product review */}
-
             <ProductReview id={id} name={food?.name} />
-        </>
+
+            {/* related products */}
+            <RelatedProducts category={food?.category} />
+
+        </section>
     );
 };
 

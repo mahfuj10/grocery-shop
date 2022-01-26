@@ -63,10 +63,14 @@
     .review-form::placeholder{
         font-weight: 500;
     }
+
+    /* slick slider icon */
     .slick-next,.slick-prev{
-        background-color: #232F3E !important;
+        background-color: #1da578 !important;
     height: 40px !important;
     width: 40px !important;
     padding: 5px !important;
+    z-index: 9 !important;
     border-radius: 50% !important;
-    }
+
+}
