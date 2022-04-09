@@ -1,5 +1,4 @@
 import React from 'react';
-import { Col } from 'react-bootstrap';
 import { IoBagAdd } from 'react-icons/io5';
 import { useNavigate } from 'react-router-dom';
 
@@ -10,7 +9,6 @@ const RelatedProduct = ({ product }) => {
 
     return (
 
-        // <Col lg={2} sm={6} md={4} xs={6}>
 
         <article className='shadow-sm  mb-md-4' style={{ width: '210px', background: "#FFFFFF", marginBottom: 10, borderRadius: 5 }}>
 
@@ -41,9 +39,6 @@ const RelatedProduct = ({ product }) => {
 
         </article>
 
-
-
-        // </Col>
     );
 };
 

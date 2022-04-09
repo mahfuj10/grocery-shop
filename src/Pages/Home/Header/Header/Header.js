@@ -1,8 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import image1 from '../../../../images/image-1.webp';
-import image2 from '../../../../images/image-2.webp';
-import image3 from '../../../../images/image-3.webp';
 import image4 from '../../../../images/banner-1.jpg';
 import image5 from '../../../../images/banner-2.jpg';
 
@@ -32,6 +30,7 @@ const Header = () => {
                         <Col lg={12}>
                             <img style={banner} src={image5} alt="" />
                         </Col>
+
                     </Row>
 
                 </Col>

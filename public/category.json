@@ -1,7 +1,8 @@
 [
     {
         "image": "https://i.postimg.cc/P51vttKG/apple.png",
-        "name": "Organic Food"
+        "name": "Organic Food",
+        "category": "Fruits"
     },
     {
         "image": "https://i.postimg.cc/mrGMMch2/baby.png",
@@ -17,15 +18,18 @@
     },
     {
         "image": "https://i.postimg.cc/tTvYr7R6/cabbage.png",
-        "name": "Fruits & Vegetable"
+        "name": "Fresh Vegetable",
+        "category": "Vegetable"
     },
     {
         "image": "https://i.postimg.cc/HWKrXJhD/carp-fish.png",
-        "name": "Fish & Meat"
+        "name": "Fish & Meat",
+        "category": "Fish & Meat"
     },
     {
         "image": "https://i.postimg.cc/XNDCL1XP/cat.png",
-        "name": "Pet Care"
+        "name": "Pet Care",
+        "category": "Pet Care"
     },
     {
         "image": "https://i.postimg.cc/PJN8hYVK/chili-sauce.png",
@@ -49,11 +53,13 @@
     },
     {
         "image": "https://i.postimg.cc/Y9CvfQ7k/frying-pan.png",
-        "name": "Cooking Essentials"
+        "name": "Cooking Essentials",
+        "category": "Cooking Essentials"
     },
     {
         "image": "https://i.postimg.cc/xdRkztWt/milk.png",
-        "name": "Milk & Dairy"
+        "name": "Milk & Dairy",
+        "category": "Milk & Dairy"
     },
     {
         "image": "https://i.postimg.cc/PJBNjcwr/shrimp.png",
@@ -61,7 +67,8 @@
     },
     {
         "image": "https://i.postimg.cc/FKmdz2nY/soft-drink.png",
-        "name": "Drinks"
+        "name": "Drinks",
+        "category": "Drinks"
     },
     {
         "image": "https://i.postimg.cc/T1S5P1Zx/strawberry-jam-1.png",
@@ -69,6 +76,7 @@
     },
     {
         "image": "https://i.postimg.cc/J0yQrGp3/honey-1.png",
-        "name": "Honey"
+        "name": "Honey",
+        "category": "Honey"
     }
 ]

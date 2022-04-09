@@ -1,8 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { Col, Container, Row } from 'react-bootstrap';
-
-import { ToastContainer, toast } from 'react-toastify';
+import React, { useEffect, useState } from 'react';
+import { Col, Row } from 'react-bootstrap';
 import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer, toast } from 'react-toastify';
 
 const Coupon = () => {
 
@@ -55,7 +54,7 @@ const Coupon = () => {
         <section className='container-md'>
             <Row style={{ margin: '80px 0' }} className='gap-3 justify-content-center  '>
                 {
-                    coupons.map(coupon => <Col xs={12} lg={5} className='d-flex  justify-content-between  shadow-sm p-4'>
+                    coupons.map(coupon => <Col key={coupon.code} xs={12} lg={5} className='d-flex  justify-content-between  shadow-sm p-4'>
 
                         <article className='d-flex  gap-2'>
 

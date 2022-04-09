@@ -10,7 +10,7 @@ const CategoryBanner = () => {
 
     return (
 
-        <Row style={{ marginTop: 70 }}>
+        <Row style={{ marginTop: 70, paddingBottom: 70 }} >
 
             <Col xs={12} md={6} lg={4}>
                 <img className='img-fluid mb-3 mb-lg-0' src={banner1} alt="" />

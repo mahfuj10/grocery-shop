@@ -4,13 +4,12 @@ import { AiOutlineHome } from 'react-icons/ai';
 import { BsFillBagPlusFill } from 'react-icons/bs';
 import { MdManageAccounts } from 'react-icons/md';
 import { BiMenuAltLeft } from 'react-icons/bi';
-import '../Navigation/Navigation.css';
 
 const BotttomNav = () => {
 
     return (
 
-        <Nav className='bottom-nav' style={{ height: "60px", backgroundColor: "#10B981" }}>
+        <Nav className='bottom-nav d-lg-none posiion-absolute' style={{ height: "60px", backgroundColor: "#10B981", width: '100%' }}>
 
             <Container className='d-flex justify-content-between'>
 

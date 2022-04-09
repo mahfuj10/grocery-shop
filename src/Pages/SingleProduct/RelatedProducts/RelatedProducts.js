@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Slider from "react-slick";
-import { Container, Row } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 import RelatedProduct from './RelatedProduct';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,17 +9,19 @@ const RelatedProducts = ({ category }) => {
 
     const [relatedProducts, setRelatedProducts] = useState([]);
 
+    // data loaded
     useEffect(() => {
-        fetch(`https://secret-island-26493.herokuapp.com/foods/${category}`)
+        fetch(`http://localhost:5000/foods/${category}`)
             .then(res => res.json())
             .then(data => setRelatedProducts(data));
     }, [category]);
 
+    // slider
     const settings = {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 5,
+        slidesToShow: relatedProducts.length > 5 ? 6 : relatedProducts.length === 1 ? 1 : relatedProducts.length === 2 ? 2 : relatedProducts.length === 3 ? 3 : 5,
         slidesToScroll: 1,
         initialSlide: 0,
         responsive: [

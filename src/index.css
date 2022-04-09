@@ -1,17 +1,17 @@
 /* change copy color */
 ::-moz-selection { /* Code for Firefox */
-	background: #b4c9dd;
+	background: #D1FAE5;
 	color: black;
   }::selection {
-	background: #b4c9dd;
+	background: #D1FAE5;
 	color: black;
   }
   ::-webkit-scrollbar {
-	width: 2px;
+	width: 5px;
   }
 
   ::-webkit-scrollbar-thumb {
-	background: #b4c9dd; 
+	background: #10B981; 
 	border-radius: 10px;
   }
 body {

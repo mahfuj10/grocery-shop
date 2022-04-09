@@ -1,8 +1,4 @@
 import React from 'react';
-import { GrDeliver } from 'react-icons/gr';
-import { AiOutlineCreditCard } from 'react-icons/ai';
-import { FiPhoneCall } from 'react-icons/fi';
-import { ImGift } from 'react-icons/im';
 import { Container } from 'react-bootstrap';
 
 
@@ -44,6 +40,7 @@ const Services = () => {
             <section className='d-flex flex-wrap justify-content-center gap-2'>
                 {
                     services.map(service => <article
+                        key={service.name}
                         style={{
                             width: 318, backgroundColor: service.color, padding: 18, borderRadius: 10
                         }}

@@ -1,0 +1,56 @@
+[
+    {
+        "name": "Sarwar Quraishi",
+        "image": "https://i.ibb.co/b3Gg4GC/doc.jpg",
+        "profession": "Doctor",
+        "rating": 5,
+        "description": "Excellent and mind blowing professional cleaning service which satisfied me because of their dedication on work and well manners. Thanks and Best wishes. I hope the serve with good manner and professionalism",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    },
+    {
+        "name": "Fariha Rashid",
+        "image": "https://i.ibb.co/RPqRkMR/fariha.jpg",
+        "profession": "journalist",
+        "rating": 5,
+        "description": "চমৎকার এবং অসাধারণ পেশাদার পরিচ্ছন্নতার পরিষেবা যা আমাকে সন্তুষ্ট করেছে কারণ তাদের কাজের প্রতি উত্সর্গ এবং ভাল আচরণের কারণে। ধন্যবাদ এবং শুভেচ্ছা। ওনাদের ব্যবহার এবং আন্তরিকতা প্রশংসাযোগ্য।",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    },
+    {
+        "name": "Partha Roy",
+        "image": "https://i.ibb.co/0qzxtQ2/download-2.jpg",
+        "profession": "Engineer",
+        "rating": 5,
+        "description": "I am really surprised taken service from this organisation. Really that was an amazing feeling haven't expressed. The service provider was fantastic. Really it's beyond my expectation. Thank you Service A2Z. Hope for the best.",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    },
+    {
+        "name": "Rahim Rahman",
+        "image": "https://i.ibb.co/TYfbVJn/teacher.jpg",
+        "profession": "Teacher",
+        "rating": 5,
+        "description": "well mannered and expert hand...it was a very nice experience. but I couldn’t claim my discount when another replacement I’ve taken...that should be recovered.2 times serviced from them and they were awesome. JazakAllahu Khairan❤️",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    },
+    {
+        "name": "shekh ishtiaq",
+        "image": "https://i.ibb.co/jk1V5TN/ishtiaq.jpg",
+        "profession": "Musician",
+        "rating": 5,
+        "description": "Excellent and mind blowing professional all services which i picked from ServiceA2Z totally satisfied me because of their dedication on work and well manners. Thanks and Best wishes. Say Thanks to Service A2Z ",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    },
+    {
+        "name": "Faruqi Chowdhury",
+        "image": "https://i.ibb.co/Th3Qmm7/abu-sufi.jpg",
+        "profession": "lawer",
+        "rating": 5,
+        "description": "Khubi valo service. Chittagong theke Dhakay basha Shift korte unader sahajjo niyechi. Shuru theke sesh porjonto kajer proti dayittoshil chilen. Highly recommended.\nIn Future e Service A2Z asha korchi onek dure egiyee jabe.",
+        "status": "approved",
+        "date": "wednesday, Jan 25, 2022"
+    }
+]

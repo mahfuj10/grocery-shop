@@ -21,7 +21,7 @@ const Footer = () => {
 
     return (
 
-        <footer>
+        <footer className='mt-auto position-static'>
 
             <Appbanner />
 

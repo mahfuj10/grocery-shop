@@ -4,12 +4,19 @@ import { CgClose } from 'react-icons/cg';
 import { MdManageAccounts } from 'react-icons/md';
 import { FiShoppingCart } from 'react-icons/fi';
 import { FiMenu } from 'react-icons/fi';
-import '../Navigation/Navigation.css';
+import './Navigation.css';
+import './Nav.css';
 import { Link } from 'react-router-dom';
+import CartDrawer from '../../CartProducts/CartDrawer/CartDrawer';
+import useFirebase from '../../../Login/Hooks/useFirebase';
 
 const Navigation = () => {
 
     const [openNav, setOpenNav] = useState(false);
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+    const { user } = useFirebase();
 
     function myFunction() {
         var x = document.getElementById("myLinks");
@@ -39,22 +46,29 @@ const Navigation = () => {
                     </article>
 
                     <article>
-                        <div className="form-grou has-search ">
+                        <div className="form-grou has-search">
                             {/* <span className="fa fa-search form-control-feedback"></span> */}
-                            <input className="form-control" id="search-input"
-                                style={{ width: '900px' }} placeholder="Search..." />
+                            <input className='form-control input'
+                                placeholder="Search..." />
                         </div>
                     </article>
 
                     <article className='d-flex text-light align-items-center gap-4'>
-                        <h4 type="button " className='d-none d-lg-block'>
-                            {openNav && <FiMenu onClick={handaleOpenNav} />}
-                            {!openNav && <CgClose
+                        <h4 className='d-none d-lg-block'>
+                            {openNav && <FiMenu type="button" onClick={handaleOpenNav} />}
+                            {!openNav && <CgClose type="button"
                                 onClick={handaleCloseNav}
                             />}
                         </h4>
-                        <h4 className='d-none d-lg-block'><FiShoppingCart /></h4>
-                        <h4 className='d-none d-lg-block'><MdManageAccounts /></h4>
+                        <h4 type="button" onClick={handleShow} className='d-none d-lg-block'><FiShoppingCart /></h4>
+
+                        {
+                            user.email ?
+                                <img width="40" className='rounded-circle' src={user.photoURL} alt={user.displayName} />
+                                :
+                                <h4 className='d-none d-lg-block'><MdManageAccounts /></h4>
+                        }
+
                     </article>
 
 
@@ -72,6 +86,9 @@ const Navigation = () => {
                     <Link to="/offer">Offers</Link>
                 </div>
             </div>
+
+            {/* cart drawer */}
+            <CartDrawer handleShow={handleShow} show={show} handleClose={handleClose} placement="top" name="top" />
         </>
     );
 };

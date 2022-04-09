@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useForm } from "react-hook-form";
+import Swal from 'sweetalert2';
 import useFirebase from '../../Login/Hooks/useFirebase';
 import '../SingleProduct.css';
 
@@ -12,13 +13,17 @@ const ReviewForm = ({ id }) => {
     const presentDate = today.getFullYear();
     today = day + '/' + month + '/' + presentDate;
     const { user } = useFirebase();
+    const [loading, setLoading] = useState(true);
+
+
+    // post review
 
     const onSubmit = data => {
 
+        setLoading(false);
         data.foodId = id;
         data.date = today;
         data.image = user?.photoURL
-
         fetch('https://secret-island-26493.herokuapp.com/review', {
             method: "POST",
             headers: {
@@ -29,25 +34,29 @@ const ReviewForm = ({ id }) => {
             .then(res => res.json(data))
             .then(data => {
                 reset();
-                alert('Thanks for your review ...')
+                setLoading(true);
+                Swal.fire('Thanks for your review ')
             })
+    };
+
+    // submit and loading button style
+    const buttonStyle = {
+        background: "#10B981", border: '1px solid white', color: "white"
     };
 
     return (
 
-        <section className="review-form mt-3 mb-3">
+        <section className="review-form shadow-sm mt-3 mb-3">
 
-            <h4 className="position-absolute ">Write a reivew</h4>
+            <h4 className="mb-0 fw-bold">Write a reivew</h4>
 
-            <form className="pt-5" onSubmit={handleSubmit(onSubmit)}>
+            <form className="pt-3" onSubmit={handleSubmit(onSubmit)}>
 
-                <label>Your Name</label> <br />
-                <input placeholder={user?.displayName} required {...register("name")} /> <br />
-                {/* <label>Your Email</label> <br />
-                <input {...register("email")} /> <br /> */}
-                <label>Rating</label> <br />
-                <select   {...register("rating")}>
-                    <option required>Choose rating</option>
+                <label>Your Name*</label> <br />
+                <input required {...register("name")} /> <br />
+                <label>Rating*</label> <br />
+                <select type="button"   {...register("rating")}>
+                    <option required></option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -55,9 +64,15 @@ const ReviewForm = ({ id }) => {
                     <option value="5">5</option>
                 </select> <br />
 
-                <label>You Message</label> <br />
-                <textarea required {...register("description")} placeholder="Your Message" rows="4"></textarea>
-                <input style={{ background: "#6388BE", border: '1px solid white', color: "white" }} value="Submit a Review" type="submit" />
+                <label>You Message*</label> <br />
+                <textarea required {...register("description")} rows="4"></textarea>
+
+                {
+                    loading ?
+                        <input style={buttonStyle} value="Submit a Review" type="submit" />
+                        :
+                        <input style={buttonStyle} value="Loading..." type="submit" />
+                }
 
             </form>
         </section>

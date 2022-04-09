@@ -7,19 +7,25 @@ import Services from '../Header/Services/Services';
 import PopularProducts from '../PopularProducts/PopularProducts/PopularProducts';
 import BotttomNav from '../Shared/BotttomNav/BotttomNav';
 import Footer from '../Shared/Footer/Footer';
+import ProgressBar from "react-scroll-progress-bar";
 import Navigation from '../Shared/Navigation/Navigation';
+import Testimonials from '../Testimonials/Testimonials';
 
 const Home = () => {
     return (
         <>
-            {/* <Navigation /> */}
+            <Navigation />
+
             <Header />
+
+
             <Services />
             <Category />
             <PopularProducts />
             <DiscountProducts />
-            {/* <Footer /> */}
-            <BotttomNav />
+            <Testimonials />
+            <Footer />
+
             {/* <Login /> */}
         </>
     );
