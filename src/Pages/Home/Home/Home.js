@@ -10,10 +10,22 @@ import Footer from '../Shared/Footer/Footer';
 import ProgressBar from "react-scroll-progress-bar";
 import Navigation from '../Shared/Navigation/Navigation';
 import Testimonials from '../Testimonials/Testimonials';
+import { useDispatch } from 'react-redux';
+import { userProfile } from '../../../Redux/reducer/cartSlice';
+import useFirebase from '../../Login/Hooks/useFirebase';
 
 const Home = () => {
+
+    const { user } = useFirebase();
+    const dispatch = useDispatch();
+
+    if (user.email) dispatch(userProfile(user?.uid));
+
+
     return (
+
         <>
+
             <Navigation />
 
             <Header />

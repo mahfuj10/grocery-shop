@@ -1,19 +1,24 @@
 /* change copy color */
-::-moz-selection { /* Code for Firefox */
-	background: #D1FAE5;
-	color: black;
-  }::selection {
-	background: #D1FAE5;
-	color: black;
-  }
-  ::-webkit-scrollbar {
-	width: 5px;
-  }
+::-moz-selection {
+  /* Code for Firefox */
+  background: #2574A9;
+  color: white;
+}
 
-  ::-webkit-scrollbar-thumb {
-	background: #10B981; 
-	border-radius: 10px;
-  }
+::selection {
+  background: #2574A9;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #10B981;
+  border-radius: 10px;
+}
+
 body {
   overflow-x: hidden;
   margin: 0;

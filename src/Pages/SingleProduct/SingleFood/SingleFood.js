@@ -14,40 +14,40 @@ import { FaGreaterThan } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
 import DeliveryDetails from '../DeliveryDetails/DeliveryDetails';
 import '../SingleProduct.css';
+import Footer from '../../Home/Shared/Footer/Footer';
 import ProductReview from '../ProductReview/ProductReview';
 import RelatedProducts from '../RelatedProducts/RelatedProducts';
 import useFirebase from '../../Login/Hooks/useFirebase';
-import { toast, ToastContainer } from 'react-toastify';
-import loader from '../../../images/loader2.gif';
-import { useSelector, useDispatch } from 'react-redux'
-import { addToCart, addToDB, removeFormCart } from '../../../Redux/reducer/cartSlice';
+import { ToastContainer } from 'react-toastify';
+import { useDispatch } from 'react-redux'
+import { addToDB } from '../../../Redux/reducer/cartSlice';
+import Navigation from '../../Home/Shared/Navigation/Navigation';
 
 const SingleFood = () => {
 
     const { id } = useParams();
     const [food, setFood] = useState({});
     const { user } = useFirebase();
-    const [loading, setLoading] = useState(true);
     const dispatch = useDispatch()
 
     window.scrollTo(0, 60)
 
     // fetch data
     const getSingleFood = async () => {
-        const response = await axios.get(`http://localhost:5000/food/${id}`);
+        const response = await axios.get(`https://secret-island-26493.herokuapp.com/food/${id}`);
         setFood(response.data);
     };
 
     useEffect(() => {
         getSingleFood();
-    }, [id]);
+    }, [id,]);
 
     // cart button
     const cartButton = {
         padding: '3px 20px',
-        border: '1px solid #10B981',
+        border: '1px solid #2574A9',
         color: "#fff",
-        background: "#10B981",
+        background: "#2574A9",
         fontWeight: 500,
         borderRadius: 2,
         marginBottom: 20
@@ -55,22 +55,20 @@ const SingleFood = () => {
 
     // add to cart
     const handleAddToCart = () => {
-
-        // setLoading(false);
-
         food.email = user.email;
         food.ID = id;
-        // dispatch(addToCart(food))
         dispatch(addToDB(food))
-        // console.log(food);
-
     };
 
 
 
     return (
 
+
         <>
+
+            <Navigation />
+
             {
                 Object.keys(food).length === 0 ?
 
@@ -79,10 +77,9 @@ const SingleFood = () => {
                         className='d-flex justify-content-center align-items-center'
                         style={{ height: '100vh' }}
                     >
-                        <MoonLoader color="#10B981" />
+                        <MoonLoader color="#2574A9" />
                     </article>
                     :
-
                     <section style={{ backgroundColor: "#F9FAFB" }}>
 
                         <Container style={{ paddingTop: 50, marginBottom: 60 }}>
@@ -107,18 +104,18 @@ const SingleFood = () => {
                                     <h6 style={{ fontSize: 14 }}>Category: {food.category}</h6>
 
                                     <Rating initialRating={food?.rating}
-                                        style={{ fontSize: "13px", marginBottom: 5, color: "#10B981" }}
+                                        style={{ fontSize: "13px", marginBottom: 5, color: "#FF9529" }}
                                         emptySymbol="far fa-star icon-color" fullSymbol="fas fa-star icon-color" readonly>
                                     </Rating>
 
                                     <p style={{ fontWeight: 500, color: "rgb(86 95 125)", fontSize: 15, marginTop: 5 }}>Most fresh vegetables are low in calories and have a water content in excess of 70 percent carrots, radishes, sweet potatoes, and turnips.</p>
 
                                     {/* add to cart button */}
-                                    {
-                                        loading ?
-                                            <button onClick={handleAddToCart} style={cartButton}><FaOpencart className='fs-4' /> Add to cart</button>
-                                            :
-                                            <button style={cartButton}>Loading...</button>}
+
+                                    <button onClick={handleAddToCart} style={cartButton}>
+                                        <FaOpencart className='fs-4' /> Add to cart
+                                    </button>
+
 
                                     <h6 style={{ fontWeight: 'bold', fontSize: 16 }}>Share your social network</h6>
 
@@ -177,6 +174,9 @@ const SingleFood = () => {
                     </section>
             }
 
+            {/* footer  */}
+
+            <Footer />
         </>
     );
 };

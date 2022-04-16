@@ -1,19 +1,21 @@
 .has-search .form-control-feedback {
-    position: absolute;
-    z-index: 2;
-    display: block;
-    width: 2.375rem;
-    height: 2.375rem;
-    line-height: 2.375rem;
-    text-align: center;
-    padding-left: 50%;
-    pointer-events: none;
-    color: #b3b0b0;
-};
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  padding-left: 50%;
+  pointer-events: none;
+  color: #b3b0b0;
+}
+
+;
 
 /* ------------expand nav item -------*/
 
-  
+
 .mobile-container {
   max-width: 480px;
   margin: auto;
@@ -55,24 +57,24 @@
 }
 
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+  transition: 0.1s;
+  color: red;
+
 }
 
-.active {
-  /* background-color: #04AA6D; */
-  color: rgb(134, 54, 54);
-}
+
 
 /*----------- bottom nav ------------*/
-.bottom-nav{
+.bottom-nav {
   z-index: +9999999;
 }
-.bottom-nav button{
-background-color: #10B981;
-border: 0;
-padding: 10px;
-font-size: 20px;
-color: white;
-};
 
+.bottom-nav button {
+  background-color: #2574A9;
+  border: 0;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+;

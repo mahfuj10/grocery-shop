@@ -7,6 +7,7 @@ const DiscountProduct = ({ product }) => {
 
     const { name, price, image, discount, oldPrice, _id } = product;
     const navigate = useNavigate();
+
     return (
 
         <Col lg={2} sm={6} md={4} xs={6}>
@@ -15,7 +16,7 @@ const DiscountProduct = ({ product }) => {
 
 
 
-                <Badge bg="warning" className='position-absolute mt-2 ms-2 mb-md-4 mb-lg-2' text="danger">
+                <Badge className='position-absolute mt-2 ms-2 mb-md-4 mb-lg-2 bg-danger' >
                     {discount}% Off
                 </Badge>
 
@@ -44,7 +45,7 @@ const DiscountProduct = ({ product }) => {
                     <button
                         style={{
                             borderRadius: 5,
-                            background: "#FFFFFF", border: "1px solid #E5E7EB", marginRight: 10, color: "#10B981"
+                            background: "#FFFFFF", border: "1px solid #E5E7EB", marginRight: 10, color: "#2574A9"
                         }}
                     >
                         <h6>  <IoBagAdd /></h6>

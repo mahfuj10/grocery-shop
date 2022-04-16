@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { useEffect } from 'react';
 import { Container, Table } from 'react-bootstrap';
 import Rating from 'react-rating';
+import { SyncLoader } from 'react-spinners';
 import { useDispatch, useSelector } from 'react-redux';
 import { ApproveTestimonial, deleteTestimonial, remainingTestimonial, Testimonials } from '../../../../Redux/reducer/cartSlice';
 import '../../Dashboard/Dashboard.css';
@@ -9,7 +10,7 @@ import '../../Dashboard/Dashboard.css';
 const ManagetesTimonials = () => {
 
     const dispatch = useDispatch();
-    const { testimonials, ApproveTestimonialLoading } = useSelector(state => state.products);
+    const { testimonials, ApproveTestimonialLoading, testimonialsLoading } = useSelector(state => state.products);
 
     useEffect(() => {
         dispatch(Testimonials());
@@ -26,6 +27,11 @@ const ManagetesTimonials = () => {
     const handleDeleteTestimonial = id => {
         dispatch(deleteTestimonial(id));
         dispatch(remainingTestimonial(id));
+    };
+
+    // loading
+    if (testimonialsLoading) {
+        return <h6 className='text-center'><SyncLoader color='#2574A9' /></h6>
     };
 
     return (

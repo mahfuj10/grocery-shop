@@ -6,6 +6,7 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import { BsWhatsapp } from 'react-icons/bs';
 import './Footer.css';
 import Appbanner from '../../Appbanner/Appbanner';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -57,11 +58,11 @@ const Footer = () => {
                             <Col xs={6} md={4}>
                                 <h6 className='mb-4'>Company</h6>
                                 {/* <Link >as</Link> */}
-                                <a href="">About Us</a>
-                                <a href="">Contact us</a>
-                                <a href="">Careers</a>
+                                <Link to='/aboutus'>About Us</Link>
+                                <Link to='/contactus'>Contact us</Link>
+                                <Link to='/'>Careers</Link>
                                 <a href="">Latest news</a>
-                                <a href="">Latest Discount</a>
+                                <Link to="/offer">Latest Discount</Link>
                             </Col>
                             <Col xs={6} md={4}>
                                 <h6 className='mb-4'>Top Category</h6>
@@ -75,10 +76,10 @@ const Footer = () => {
                             <Col xs={6} md={4}>
                                 <h6 className='mb-4'>My Account</h6>
 
-                                <a href="">Dashboard</a>
-                                <a href="">My Orders</a>
+                                <Link to='/dashboard'>Dashboard</Link>
+                                <Link to='/dashboard/myorder'>My Orders</Link>
                                 <a href="">Recent Orders</a>
-                                <a href="">Updated Profile</a>
+                                <Link to='/dashboard/myprofile'>Updated Profile</Link>
                                 <a href="">Fruits & Vegetable</a>
                             </Col>
                         </Row>

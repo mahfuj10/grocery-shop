@@ -13,7 +13,8 @@ const MyOrders = () => {
     const { orders, orderDataLoading } = useSelector(state => state.products);
     const [reviewProduct, setReviewProduct] = useState({});
     const [openReivewBox, setOpenReivewBox] = useState(false);
-    console.log(reviewProduct);
+
+
     useEffect(() => {
         dispatch(Myorders(user?.email));
     }, [user, dispatch]);
@@ -79,7 +80,6 @@ const MyOrders = () => {
 
 
                                         <article
-                                            // onClick={() => navigate(`/single-details/${_id}`)}
                                             type="button"
                                             className='d-flex justify-content-center'
                                         >
@@ -101,14 +101,15 @@ const MyOrders = () => {
                                                 <Badge bg="success">{order?.status}</Badge>
                                             </button>
                                         </article>
-
-                                        <button
-                                            onClick={() => handleOpenReviewBox(order)}
-                                            style={reviewButton}
-                                        >
-                                            Write a review
-                                        </button>
-
+                                        {
+                                            order.status === 'Shipped' &&
+                                            <button
+                                                onClick={() => handleOpenReviewBox(order)}
+                                                style={reviewButton}
+                                            >
+                                                Write a review
+                                            </button>
+                                        }
                                     </article>
 
 

@@ -145,7 +145,7 @@ const CheckoutForm = ({ price, cartProducts }) => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/getclientsecretid', {
+        fetch('https://secret-island-26493.herokuapp.com/getclientsecretid', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -230,11 +230,11 @@ const CheckoutForm = ({ price, cartProducts }) => {
             };
 
 
-            axios.post('http://localhost:5000/storeOrders', data).then(res => {
-                axios.delete(`http://localhost:5000/deletecartproducts?email=${user?.email}`, cartProducts);
+            axios.post('https://secret-island-26493.herokuapp.com/storeOrders', data).then(res => {
+                axios.delete(`https://secret-island-26493.herokuapp.com/deletecartproducts?email=${user?.email}`, cartProducts);
             });
 
-            // axios.delete(`http://localhost:5000/deletecartproducts?email=${user?.email}`, cartProducts);
+            // axios.delete(`https://secret-island-26493.herokuapp.com/deletecartproducts?email=${user?.email}`, cartProducts);
 
         };
     };

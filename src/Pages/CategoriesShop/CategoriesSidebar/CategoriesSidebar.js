@@ -21,7 +21,7 @@ const CategoriesSidebar = () => {
 
     return (
 
-        <section style={{ background: "#fff", padding: '15px 20px', borderRadius: 15 }}>
+        <section style={{ background: "#fff", padding: '15px 20px', borderRadius: 15, marginBottom: 70 }}>
 
 
 

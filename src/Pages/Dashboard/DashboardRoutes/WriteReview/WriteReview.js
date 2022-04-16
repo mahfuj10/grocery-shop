@@ -29,7 +29,7 @@ const WriteReview = ({ name, ID, handeCloseReviewBox }) => {
         if (data.name === '') {
             data.name = user?.displayName;
         };
-        axios.post(`http://localhost:5000/addproductreivew?foodId=${ID}`, data).then(res => {
+        axios.post(`https://secret-island-26493.herokuapp.com/addproductreivew?foodId=${ID}`, data).then(res => {
             reset();
             setLoading(false)
         });
@@ -37,7 +37,7 @@ const WriteReview = ({ name, ID, handeCloseReviewBox }) => {
 
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/userReview/QhRYrYNQbKcpetrYJYaCSoDWGsd2`)
+        axios.get(`https://secret-island-26493.herokuapp.com/userReview/QhRYrYNQbKcpetrYJYaCSoDWGsd2`)
             .then(res => {
                 setUserReview(res.data);
             })
@@ -52,7 +52,7 @@ const WriteReview = ({ name, ID, handeCloseReviewBox }) => {
         const updatedRating = ratingRef.current.value;
         const updatedMessage = messageRef.current.value;
         const updatedDoc = { updatedName, updatedMessage, updatedRating };
-        axios.put(`http://localhost:5000/updateName?uid=${review?.uid}`, updatedDoc).then(res => setOpenBox(false));
+        axios.put(`https://secret-island-26493.herokuapp.com/updateName?uid=${review?.uid}`, updatedDoc).then(res => setOpenBox(false));
     };
 
 
@@ -65,7 +65,7 @@ const WriteReview = ({ name, ID, handeCloseReviewBox }) => {
         })
             .then((willDelete) => {
                 if (willDelete) {
-                    axios.delete(`http://localhost:5000/deleteReview?uid=${user?.uid}`).then(res => {
+                    axios.delete(`https://secret-island-26493.herokuapp.com/deleteReview?uid=${user?.uid}`).then(res => {
                         swal("Poof! Your review has been deleted!", {
                             icon: "success",
                         });

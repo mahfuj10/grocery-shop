@@ -45,7 +45,7 @@ const Services = () => {
                             width: 318, backgroundColor: service.color, padding: 18, borderRadius: 10
                         }}
                         className='d-flex align-items-center gap-3'>
-                        <h6 style={{ color: "#10B981", fontSize: 20 }}>
+                        <h6 style={{ color: "#2574A9", fontSize: 20 }}>
                             <i className={service.icon}></i>
                         </h6>
                         <article>

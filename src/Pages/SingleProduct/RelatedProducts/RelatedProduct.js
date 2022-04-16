@@ -15,7 +15,7 @@ const RelatedProduct = ({ product }) => {
 
             <article
                 onClick={() => navigate(`/single-details/${_id}`)}
-                type="button"
+
                 className='d-flex justify-content-center'
             >
                 <img width="160" height="160" src={image} alt="foodImage" />

@@ -18,7 +18,7 @@ function CartDrawer({ name, handleShow, show, handleClose, ...props }) {
     };
 
     useEffect(() => {
-        fetch(`http://localhost:5000/myCartProducts/${user.email}`).then(res => res.json()).then(data => setCartProducts(data));
+        fetch(`https://secret-island-26493.herokuapp.com/myCartProducts/${user.email}`).then(res => res.json()).then(data => setCartProducts(data));
     }, [cartProducts, user]);
 
 
@@ -55,10 +55,10 @@ function CartDrawer({ name, handleShow, show, handleClose, ...props }) {
 
                                 <Col lg={2}>
 
-                                    <Checkout
+                                    {cartProducts.length > 0 && <Checkout
                                         totalPrice={totalPrice}
                                         items={cartProducts.length}
-                                    />
+                                    />}
                                 </Col>
                             </Row>
 

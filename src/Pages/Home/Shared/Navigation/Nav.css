@@ -1,12 +1,15 @@
-.input{
+.input {
     width: 900px;
 }
+
+
+
 /*-------------------
   media query
 ------------------*/
 @media only screen and (max-width: 900px) {
 
-    .input{
+    .input {
         width: 150% !important;
     }
 }

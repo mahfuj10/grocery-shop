@@ -28,7 +28,7 @@ const AddTestimonials = () => {
         // property
         data = { ...data, date: today, status: 'pending', image: user.photoURL };
         // dispatch(addTestimonial(data));
-        axios.post('http://localhost:5000/review', data).then(res => {
+        axios.post('https://secret-island-26493.herokuapp.com/review', data).then(res => {
             setLoading(false);
             reset();
             Swal.fire({
@@ -39,8 +39,6 @@ const AddTestimonials = () => {
 
     };
 
-    const FetchApi = (data) => {
-    }
 
     // input style
     const inputStyle = {

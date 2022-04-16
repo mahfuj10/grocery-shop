@@ -1,0 +1,11 @@
+@media (max-width:1050px) {
+    .testimonial_form {
+        width: 80% !important;
+    }
+}
+
+@media (max-width:650) {
+    .testimonial_form {
+        width: 100% !important;
+    }
+}

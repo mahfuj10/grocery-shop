@@ -6,8 +6,9 @@ const Review = ({ review }) => {
     const { image, name, description, rating, date } = review;
 
     return (
-        <article className
-            ="mt-3 mb-4">
+
+        <article className="mt-3 mb-4">
+
             <aside className="d-flex gap-2 align-items-center">
 
                 <span>
@@ -21,9 +22,17 @@ const Review = ({ review }) => {
                 </span>
             </aside>
 
-            <Rating initialRating={rating}
-                style={{ fontSize: '15px', color: "#10B981", marginTop: '10px' }}
-                emptySymbol="far fa-star icon-color" fullSymbol="fas fa-star icon-color" readonly />
+            <Rating
+                initialRating={rating}
+                style={{
+                    fontSize: '15px',
+                    color: "#FF9529",
+                    marginTop: '10px'
+                }}
+                emptySymbol="far fa-star icon-color"
+                fullSymbol="fas fa-star icon-color"
+                readonly
+            />
 
             <p style={{ fontWeight: "500", marginTop: '6px', color: "#545F73" }}>{description}</p>
             <hr />

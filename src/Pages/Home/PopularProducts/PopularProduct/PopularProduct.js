@@ -17,7 +17,6 @@ const PopularProduct = ({ product }) => {
 
                 <article
                     onClick={() => navigate(`/single-details/${_id}`)}
-                    type="button"
                     className='d-flex justify-content-center'
                 >
                     <img width="160" height="160" src={image} alt="foodImage" />
@@ -32,7 +31,7 @@ const PopularProduct = ({ product }) => {
                     <button
                         style={{
                             borderRadius: 5,
-                            background: "#FFFFFF", border: "1px solid #E5E7EB", marginRight: 10, color: "#10B981"
+                            background: "#FFFFFF", border: "1px solid #E5E7EB", marginRight: 10, color: "#2574A9"
                         }}
                     >
                         <h6>  <IoBagAdd /></h6>

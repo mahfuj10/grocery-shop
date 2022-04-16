@@ -1,14 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { ScaleLoader } from 'react-spinners';
+import { allPorducts } from '../../../../Redux/reducer/cartSlice';
 import DiscountProduct from '../DiscountProduct/DiscountProduct';
 import '../Skeleton.css';
 
 
 const DiscountProducts = () => {
 
-    const { products, productLoading } = useSelector(state => state.products)
+
+    const { products, productLoading } = useSelector(state => state.products);
+
 
     return (
         <section style={{ background: "#fff" }}>
